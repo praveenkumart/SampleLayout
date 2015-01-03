@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.samplelayoutdesign.MainActivity" >
+
+    <TextView
+        android:id="@+id/main_textView_orgin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="5dp"
+        android:background="#000000"
+        android:padding="5dp"
+        android:text="O r g i n"
+        android:textColor="#ff123a" />
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_textView_orgin"
+        android:layout_alignRight="@+id/tview2"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/main_textView_orgin"
+        android:background="#000000"
+        android:padding="5dp"
+        android:text="Relative one"
+        android:textColor="#ff123a" />
+
+    <TextView
+        android:id="@+id/tview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview1"
+        android:layout_toRightOf="@+id/main_textView_orgin"
+        android:background="#000000"
+        android:padding="5dp"
+        android:text="Relative three"
+        android:textColor="#ff123a" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tview3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_textView_orgin"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/main_textView_orgin"
+        android:background="#000000"
+        android:padding="5dp"
+        android:text="Relative four"
+        android:textColor="#ff123a" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tview4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_textView_orgin"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/main_textView_orgin"
+        android:background="#000000"
+        android:padding="5dp"
+        android:text="Relative five"
+        android:textColor="#ff123a" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tview5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_textView_orgin"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/main_textView_orgin"
+        android:background="#000000"
+        android:padding="5dp"
+        android:text="Relative five"
+        android:textColor="#ff123a" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tview6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_textView_orgin"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/tview3"
+        android:layout_toRightOf="@+id/tview5"
+        android:background="#000000"
+        android:padding="5dp"
+        android:text="Relative five"
+        android:textColor="#ff123a" >
+    </TextView>
+
+</RelativeLayout>
