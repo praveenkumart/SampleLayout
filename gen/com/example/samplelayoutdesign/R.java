@@ -1727,7 +1727,6 @@ containing a value of this type.
         public static final int split_action_bar=0x7f090004;
         public static final int submit_area=0x7f09003c;
         public static final int tabMode=0x7f09000c;
-        public static final int textView-1=0x7f090059;
         public static final int textView1=0x7f090042;
         public static final int textView2=0x7f090043;
         public static final int textView3=0x7f090044;
@@ -1736,6 +1735,7 @@ containing a value of this type.
         public static final int textView6=0x7f090047;
         public static final int textView7=0x7f090048;
         public static final int textView8=0x7f090049;
+        public static final int textView_1=0x7f090059;
         public static final int title=0x7f090027;
         public static final int up=0x7f090001;
         public static final int useLogo=0x7f090013;

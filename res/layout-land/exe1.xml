@@ -35,27 +35,30 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="6dp"
-        android:layout_weight="5.2"
-        android:orientation="vertical"
-        android:weightSum="3.7" >
+        android:layout_weight="6.3"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
 
         <ImageView
             android:id="@+id/imageView1"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="3.3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.60"
             android:scaleType="fitXY"
             android:src="@drawable/map" />
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.40"
             android:background="#393939"
-            android:orientation="vertical" >
+            android:orientation="vertical"
+            android:weightSum="4.0" >
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1.0"
                 android:weightSum="2.0" >
 
                 <RelativeLayout
@@ -133,7 +136,8 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
 
                 <RelativeLayout
                     android:layout_width="0dp"
@@ -218,37 +222,41 @@
                     </TextView>
                 </RelativeLayout>
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:layout_margin="2dp" >
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.0"
+                    android:background="#F0510C"
+                    android:text="Segments"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:layout_margin="2dp" >
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.0"
+                    android:background="#272727"
+                    android:text="Achievements"
+                    android:textColor="#999999" />
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginBottom="0.75dp"
-        android:layout_weight="1.1"
-        android:background="#393939"
-        android:orientation="horizontal"
-        android:weightSum="2.0" >
-
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="1.0"
-            android:background="#F0510C"
-            android:text="Segments"
-            android:textColor="#ffffff" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="1.0"
-            android:background="#272727"
-            android:text="Achievements"
-            android:textColor="#999999" />
     </LinearLayout>
 
     <RelativeLayout
